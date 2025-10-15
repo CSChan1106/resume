@@ -10,8 +10,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: isProd? '/test': '',
-  assetPrefix: isProd? '/test/' : ''
+  basePath: isProd? '/resume': '',
+  assetPrefix: isProd? '/resume/' : ''
 };
 
 
