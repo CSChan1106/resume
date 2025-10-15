@@ -1,0 +1,1 @@
+export const WEB3FORM_KEY = '8fd8001b-ff57-429a-b5e2-ff1b6a2fe3d0';
