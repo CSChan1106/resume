@@ -4,6 +4,12 @@ import { motion } from 'motion/react'
 import { assets } from '@/assets/assets'
 
 export default function Introduction({ isDarkMode = false }) {
+  const resumeUrl =
+    process.env.NEXT_PUBLIC_RESUME_URL ||
+    'https://cschan1106.github.io/resume/ChanChakShing_resume.pdf'
+
+  const shouldDownload = typeof window !== 'undefined' && resumeUrl.startsWith(window.location.origin)
+
   return (
     <section
       id="introduction"
@@ -86,8 +92,10 @@ export default function Introduction({ isDarkMode = false }) {
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.2 }}
-              href="/ChanChakShing_resume.pdf"
-              download
+              href={resumeUrl}
+              {...(shouldDownload ? { download: true } : {})}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black hover:scale-105 duration-300"
             >
               My resume
@@ -95,9 +103,7 @@ export default function Introduction({ isDarkMode = false }) {
             </motion.a>
           </div>
         </motion.div>
-        
       </motion.div>
-      
     </section>
   )
 }
