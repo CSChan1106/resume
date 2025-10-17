@@ -63,7 +63,7 @@ export default function Introduction({ isDarkMode = false }) {
             transition={{ duration: 0.6, delay: 0.7 }}
             className="max-w-2xl m-4 font-Ovo"
           >
-            I am a recent Computer Science graduate from Hong Kong Metropolitan
+            I am a fresh Computer Science graduate from Hong Kong Metropolitan
             University with a strong academic record. I'm passionate about web
             and backend development, quick to learn new technologies, and eager
             to apply my skills. I'm currently seeking opportunities to

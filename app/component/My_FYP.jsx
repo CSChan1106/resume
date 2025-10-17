@@ -40,7 +40,7 @@ export default function My_FYP({ isDarkMode = false }) {
           }`}
         >
           <h3 className="text-2xl md:text-3xl font-semibold font-Ovo mb-4">
-            MindWave: A concept platform for Brain diseases detection with Deep Learning and AI Chat
+            MindWave: A concept platform for Brain diseases detection with Deep Learning model and AI Chat
           </h3>
 
           <p className="text-base leading-relaxed mb-4 text-gray-700 dark:text-gray-300">

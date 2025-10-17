@@ -20,7 +20,7 @@ export default function Work_Experience({ isDarkMode = false }) {
     {
       company: 'Manpower',
       role: 'Part-Time Public Library Computer Technician',
-      period: '08/7/2023 to 28/6/2024',
+      period: '08/7/2023 - 28/6/2024',
       description: [
         'Customer Service',
         'Computer troubleshooting',

@@ -38,7 +38,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             <li> <a className='font-Ovo' href="#top">Introduction</a> </li>
             <li> <a className='font-Ovo' href="#education">Education</a> </li>
             <li> <a className='font-Ovo' href="#skills">Skills</a> </li>
-            <li> <a className='font-Ovo' href="#work_experience">Work Experience</a> </li>
+            <li> <a className='font-Ovo' href="#work_experience">Experience</a> </li>
             <li> <a className='font-Ovo' href="#my_fyp">FYP</a> </li>
             <li> <a className='font-Ovo' href="#achievements_awards">Achievements/Awards</a> </li>
         </ul>
@@ -61,7 +61,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             <li> <a className='font-Ovo' onClick={closeMenu} href="#top">Introduction</a> </li>
             <li> <a className='font-Ovo' onClick={closeMenu} href="#education">Education</a> </li>
             <li> <a className='font-Ovo' onClick={closeMenu} href="#skills">Skills</a> </li>
-            <li> <a className='font-Ovo' onClick={closeMenu} href="#work_experience">Work Experience</a> </li>
+            <li> <a className='font-Ovo' onClick={closeMenu} href="#work_experience">Experience</a> </li>
             <li> <a className='font-Ovo' onClick={closeMenu} href="#my_fyp">FYP</a> </li>
             <li> <a className='font-Ovo' onClick={closeMenu} href="#achievements_awards">Achievements/Awards</a> </li>
             <li> <a className='font-Ovo' onClick={closeMenu} href="#contact">Contact me</a> </li>
