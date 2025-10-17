@@ -6,19 +6,39 @@ import { motion } from 'motion/react'
 const skillCategories = [
   {
     title: 'Programming Languages',
-    skills: ['Python', 'Java','JavaScript', 'HTML', 'CSS'],
+    skills: [
+      { name: 'Python', level: 'Intermediate' },
+      { name: 'Java', level: 'Intermediate' },
+      { name: 'JavaScript', level: 'Intermediate' },
+      { name: 'HTML', level: 'Intermediate' },
+      { name: 'CSS', level: 'Novice' },
+    ],
   },
   {
     title: 'Frameworks & Libraries',
-    skills: ['React', 'Next.js', 'Flask', 'Node.js', 'Express.js'],
+    skills: [
+      { name: 'React', level: 'Intermediate' },
+      { name: 'Next.js', level: 'Novice' },
+      { name: 'Flask', level: 'Intermediate' },
+      { name: 'Node.js', level: 'Intermediate' },
+      { name: 'Express.js', level: 'Intermediate' },
+    ],
   },
   {
-    title: 'Databases & Tools',
-    skills: ['PostgreSQL', 'MongoDB', 'Git'],
+    title: 'Databases',
+    skills: [
+      { name: 'PostgreSQL', level: 'Intermediate' },
+      { name: 'MongoDB', level: 'Intermediate' },
+      { name: 'mySQL', level: 'Novice' },
+      { name: 'OracleDB', level: 'Intermediate' },
+    ],
   },
   {
     title: 'Others',
-    skills: ['REST APIs', 'ML'],
+    skills: [
+      { name: 'REST APIs', level: 'Intermediate' },
+      { name: 'ML', level: 'Novice' },
+    ],
   },
 ]
 
@@ -73,7 +93,7 @@ export default function Skills({ isDarkMode = false }) {
                       : 'border-gray-300 bg-gray-100 text-gray-900'
                   }`}
                 >
-                  {skill} — <span className="italic text-gray-500">Intermediate</span>
+                  {skill.name} — <span className="italic text-gray-500">{skill.level}</span>
                 </motion.span>
               ))}
             </div>
